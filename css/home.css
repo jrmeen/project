@@ -7,11 +7,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
+
 }
 
 a {
     background-color: rgba(175, 148, 29, 0.986);
-    box-shadow: 0 5px 0 darkred;
+    box-shadow: 0 10px 0 darkred;
     color: white;
     position: relative;
     text-decoration: none;
@@ -37,23 +38,11 @@ body {
     align-items: center;
     height: 100vh;
     font-family:'Neucha', cursive;
-   
-}
-
-content {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 100px;
-  grid-template-areas: 
-    ". a a a a ."
-    ". a a a a ."
-    ". c c c c .";
+    
 }
 
 
 .item1 {
-    grid-area: a;
     align-self: center;
     justify-self: center;
     padding : grayscale ;
@@ -61,19 +50,20 @@ content {
   }
 
 .item2{
-    grid-area: c;
+  
     font-size: 1.4em;
     letter-spacing: 1px;
     align-self: center; 
     justify-self: center;
-    margin: 10px 60px 100px 60px;
+    margin: 20px 60px 100px 60px;
     background-color: rgba(175, 148, 29, 0.986);
     color: aliceblue;
-    padding: 20px;
+    padding: 50px  50px  50px  50px;
     
 }
 
-.head1 {
+
+h1 {
     font-size: 3em;
     line-height: 30px;
     margin:20px 1px;
@@ -83,15 +73,14 @@ content {
     text-align: center;  
   }
 
-.head2{
+h2{
     font-size: 5em;
     line-height: 30px;
     margin:20px 1px;
     align-self: center;
     justify-self: center;
     padding: 32px;
-    text-align: center;  
-     
+    text-align: center;    
   }
 
 footer{
@@ -108,3 +97,11 @@ footer{
     background-color: darkred;
 }
 
+
+@media screen and (max-width:800px) {
+  #body{
+      grid-template-columns: auto;
+    
+  }
+
+}
