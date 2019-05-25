@@ -1,4 +1,4 @@
-.menu {
+nav {
     font-size: 1.5em;
     font-family: 'Neucha', cursive;
     line-height: 30px;
@@ -42,24 +42,17 @@ body {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 7em;
     line-height: 30px;
     margin:20px 1px;
     align-self: center;
     justify-self: center;
-    padding: 32px;
+    padding: 90px ;
     text-align: center;  
+    background-color: rgb(128, 65, 65);
+    color: aliceblue;
   }
 
-h2{
-    font-size: 5em;
-    line-height: 30px;
-    margin:20px 1px;
-    align-self: center;
-    justify-self: center;
-    padding: 32px;
-    text-align: center;    
-  }
 
 
 footer{
@@ -79,40 +72,44 @@ footer{
 * {
     box-sizing: border-box;
   }
-  
-  body {
-    margin: 0;
-    font-family: Arial;
-  }
-  
-  .header {
-    text-align: center;
-    padding: 32px;
-  }
-  
-  .row {
+
+.row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   }
-/* Create four equal columns that sits next to each other */
+
 .column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
   }
-      
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }  
 
 .msg {
+    font-size:  1.3em;
     padding: 20px 20px 20px 20px;
     background-color: rgb(194, 153, 100);
     letter-spacing: 2px;
+    color: rgb(65, 53, 53);
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
+
+.box {
+    background-color: rgb(194, 153, 100);
+    padding: 100px 150px 150px 150px;
+
+}
+
+.clock {
+  color: rgb(203, 214, 216);
+  background-color: black;
+  font-size: 2em;
+  font-family: 'Abril Fatface', cursive;
+  letter-spacing: 10px;
+  text-align: center;
+  padding: 100px 2px ;
+ 
+}
+
 @media (max-width: 800px) {
     .column {
       flex: 50%;
@@ -120,7 +117,7 @@ footer{
     }
   }
   
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  
   @media (max-width: 600px) {
     .column {
       flex: 100%;
