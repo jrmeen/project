@@ -1,11 +1,12 @@
 nav {
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: 'Neucha', cursive;
     line-height: 30px;
     margin:20px 1px;
     text-align: center; 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 2px;
 
 }
 
@@ -16,7 +17,7 @@ a {
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: 20px 2px;
     
 }
 
@@ -37,12 +38,12 @@ body {
     justify-content: center;
     align-items: center;
     font-family:'Neucha', cursive;
-    padding: 20px 20px 20px 20px;
+    padding: 2px;
 
 }
 
 h1 {
-    font-size: 7em;
+    font-size: 2.4em;
     line-height: 30px;
     margin:20px 1px;
     align-self: center;
@@ -95,18 +96,18 @@ footer{
 
 .box {
     background-color: rgb(194, 153, 100);
-    padding: 100px 150px 150px 150px;
+    padding: 100px 20px 100px 150px;
 
 }
 
 .clock {
   color: rgb(203, 214, 216);
   background-color: black;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: 'Abril Fatface', cursive;
   letter-spacing: 10px;
   text-align: center;
-  padding: 100px 2px ;
+  padding: 100px 1.5px ;
  
 }
 
@@ -119,7 +120,7 @@ footer{
   
   
   @media (max-width: 600px) {
-    .column {
+    .row {
       flex: 100%;
       max-width: 100%;
     }
