@@ -16,7 +16,7 @@ add link more about content
 ..
 create about.html
 add about me page header : This is me!!!
-add pigture and content in flexbox 
+add picture and content in flexbox 
 add javascript-clock
 create js. code
 create css to describe the style for each page.
