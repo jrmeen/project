@@ -7,11 +7,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-
 }
 
 a {
-    background-color: rgba(175, 148, 29, 0.986);
+    background-color:rgb(190, 145, 87);
     box-shadow: 0 10px 0 darkred;
     color: white;
     position: relative;
@@ -30,40 +29,17 @@ a:active {
   top: 5px;
 }
 
+
 body {
-    background-color:rgba(252, 216, 56, 0.986);
+    background-color:burlywood;
     letter-spacing: 6px;
     margin-bottom: 12px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-family:'Neucha', cursive;
-    padding: 20px ;
-    
+    padding: 20px 20px 20px 20px;
+
 }
-
-
-.item1 {
-    align-self: center;
-    justify-self: center;
-    padding : grayscale ;
-    margin: 0px 60px 0px 60px;
-  }
-
-.item2{
-  
-    font-size: 1.4em;
-    letter-spacing: 1px;
-    align-self: center; 
-    text-align: center;
-    justify-self: center;
-    margin: 20px 60px 100px 60px;
-    background-color: rgba(175, 148, 29, 0.986);
-    color: aliceblue;
-    padding: 50px  50px  50px  50px;
-    
-}
-
 
 h1 {
     font-size: 3em;
@@ -85,6 +61,7 @@ h2{
     text-align: center;    
   }
 
+
 footer{
     font-size: 1em;
     background-color: darkred;
@@ -99,11 +76,54 @@ footer{
     background-color: darkred;
 }
 
-
-@media screen and (max-width:800px) {
-  #body{
-      grid-template-columns: auto;
-    
+* {
+    box-sizing: border-box;
   }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  .header {
+    text-align: center;
+    padding: 32px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+      
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }  
 
+.msg {
+    padding: 20px 20px 20px 20px;
+    background-color: rgb(194, 153, 100);
+    letter-spacing: 2px;
 }
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

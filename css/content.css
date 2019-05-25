@@ -29,16 +29,7 @@ a:active {
   top: 5px;
 }
 
-a {
-    background-color: rgba(175, 148, 29, 0.986);
-    box-shadow: 0 10px 0 darkred;
-    color: white;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    
-    
-}
+
 body {
     background-color:rgba(252, 216, 56, 0.986);
     letter-spacing: 6px;
@@ -72,7 +63,7 @@ h2{
 
 
 footer{
-    font-size: 1em;
+    font-size: 1.5em;
     background-color: darkred;
     line-height: 30px;
     margin:20px 1px;
